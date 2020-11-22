@@ -2,9 +2,9 @@
 pipeline {
     agent any
     
-    environment {
-        PATH = "/usr/share/maven:$PATH"
-		}
+    tools {
+    	maven "maven"
+    }
 
     stages {
         stage('Hello') {
